@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Regular.ttf");
+  font-family: "Prompt";
+  src: url("./fonts/Prompt-Regular.ttf");
 }
 @font-face {
-  font-family: "Raleway-semibold";
-  src: url("../fonts/Raleway-SemiBold.ttf");
+  font-family: "Prompt-semibold";
+  src: url("./fonts/Prompt-SemiBold.ttf");
 }
 @font-face {
-  font-family: "Raleway-bold";
-  src: url("../fonts/Raleway-Bold.ttf");
+  font-family: "Prompt-bold";
+  src: url("./fonts/Prompt-Bold.ttf");
 }
 
-$font-bold: 'Raleway-bold';
-$font-semibold: 'Raleway-semibold';
-$font-regular: 'Raleway';
+$font-bold: 'Prompt-Bold';
+$font-semibold: 'Prompt-SemiBold';
+$font-regular: 'Prompt';
 
 body {
   font-family: $font-regular, sans-serif;
