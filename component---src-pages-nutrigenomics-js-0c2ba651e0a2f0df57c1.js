@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknutrigenomics=self.webpackChunknutrigenomics||[]).push([[577],{930:function(e,n,t){t.r(n);var u=t(7294);n.default=function(){return u.createElement(u.Fragment,null,u.createElement("h1",null,"ท้องฟ้าดูช่างกว้างใหญ่"),"Hello There ท้องฟ้าดูช่างกว้างใหญ่")}}}]);
+//# sourceMappingURL=component---src-pages-nutrigenomics-js-0c2ba651e0a2f0df57c1.js.map
