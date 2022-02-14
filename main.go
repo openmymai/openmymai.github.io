@@ -11,5 +11,5 @@ func main() {
 
 	app.Static("/", "./public")
 
-	log.Fatal(app.Listen(":8080"))
+	log.Fatal(app.Listen(":80"))
 }
