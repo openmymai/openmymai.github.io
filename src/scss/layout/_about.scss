@@ -1,0 +1,138 @@
+section:nth-of-type(2) .label-wrap .label {
+  margin: 20px 0 10px 0;
+}
+
+section:nth-of-type(2) .bullet-wrap {
+  height: 200px;
+  justify-content: flex-start;
+  padding: 0 7px;
+}
+
+section:nth-of-type(2) .highlight {
+  color: #009ada;
+}
+
+section:nth-of-type(2) .up-arrow {
+  height: 30px;
+  margin: 15px 0;
+}
+
+section:nth-of-type(2) .skills-wrapper {
+  align-items: flex-start;
+  width: 100%;
+}
+
+section:nth-of-type(2) .skills-wrapper .me {
+  height: 200px;
+}
+
+section:nth-of-type(2) .skills-wrapper .label {
+  margin: 20px 0 15px 0;
+}
+
+section:nth-of-type(2) .hexagon i {
+  color: #fff;
+  font-size: 34pt;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  z-index: 1;
+}
+
+section:nth-of-type(2) .bars-wrap {
+  margin: 50px auto 0 auto;
+  max-width: 90%;
+  width: calc(100% - 15px);
+}
+
+section:nth-of-type(2) .bars-wrap:not(.animated) .fill {
+  width: 0 !important;
+}
+
+section:nth-of-type(2) .bar {
+  align-items: flex-end;
+  background-color: #eee;
+  color: #666;
+  font-size: 7pt;
+  height: 22px;
+  margin: 0 0 12px 0;
+  position: relative;
+}
+
+section:nth-of-type(2) .bar:nth-child(1) .fill {
+  transition: 1.1s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(2) .fill {
+  transition: 1.2s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(3) .fill {
+  transition: 1.3s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(4) .fill {
+  transition: 1.4s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(5) .fill {
+  transition: 1.5s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(6) .fill {
+  transition: 1.6s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(7) .fill {
+  transition: 1.7s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(8) .fill {
+  transition: 1.8s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(9) .fill {
+  transition: 1.9s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar:nth-child(10) .fill {
+  transition: 2s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar span {
+  display: none;
+}
+
+section:nth-of-type(2) .bar.fill {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #00a1a7;
+  opacity: 1;
+  padding: 0;
+}
+
+section:nth-of-type(2) .bar .tag {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #04c2c9;
+  color: #fff;
+  height: 100%;
+  width: 110px;
+  width: 70px;
+}
+
+section:nth-of-type(2) .bar.secondary {
+  background-color: #c51675;
+}
+
+section:nth-of-type(2) .bar.secondary .tag {
+  background-color: $color-primary;
+}
+
+section:nth-of-type(2) .bar span {
+  padding: 0 15px 0 0;
+  z-index: 1;
+}

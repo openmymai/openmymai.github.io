@@ -1,0 +1,28 @@
+html {
+  font-size: 10px; // 1 rem = 16px; 10px/16px = 62.5%
+  height: 100%;
+
+  @include respond(tablet-landscape) {
+  }
+
+  @include respond(big-desktop) {
+    font-size: 100%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overflow-wrap {
+  overflow-x: hidden;
+}

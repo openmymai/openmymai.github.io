@@ -1,9 +1,12 @@
 module.exports = {
+  plugins: [{
+    resolve: 'gatsby-plugin-sass',
+  }],
   siteMetadata: {
       title: `Nutrigenomics`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass", {
+  plugins: [ "gatsby-plugin-sass", {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       "trackingId": "303423741"

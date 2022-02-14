@@ -1,0 +1,88 @@
+// Colors
+$color-black:           #000;
+$color-white:           #fff;
+$color-light:           #eee;
+
+$color-link:            #8a2be2;
+$color-link-hover:      darken($color-link, 15%) !default;
+
+$color-primary:         #e31b6d;
+$color-primary-light:   #ff3366;
+$color-primary-dark:    #ba265d;
+
+$color-grey-light-1:    #faf9f9;
+$color-grey-light-2:    #f4f2f2;
+$color-grey-light-3:    #ccc;
+
+$color-grey-dark-1:     #333;
+$color-grey-dark-2:     #777;
+$color-grey-dark-3:     #999;
+
+$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+// Sizes
+$font-size-base:        1.4rem;
+$line-height-base:      1.428571429 !default; // 20/14
+
+$max-width-container:   90rem;
+$tablet-portrait:       60rem;
+$tablet-landscape:      90rem;
+$desktop:               120rem;
+$big-desktop:           180rem;
+
+$border-radius-base:    .4rem !default;
+$border-radius-large:   .6rem !default;
+$border-radius-small:   .3rem !default;
+
+$padding-base-vertical:     .6rem !default;
+$padding-base-horizontal:   .12rem !default;
+
+$padding-large-vertical:    .10rem !default;
+$padding-large-horizontal:  .16rem !default;
+
+$padding-small-vertical:    .5rem !default;
+$padding-small-horizontal:  .10rem !default;
+
+$padding-xs-vertical:       .1rem !default;
+$padding-xs-horizontal:     .5rem !default;
+
+// Buttons
+$button-font-weight:                normal !default;
+
+$button-default-color:              #333 !default;
+$button-default-bg:                 #fff !default;
+$button-default-border:             #ccc !default;
+
+$button-primary-color:              #fff !default;
+$button-primary-bg:                 $brand-primary !default;
+$button-primary-border:             darken($button-primary-bg, 5%) !default;
+
+$button-success-color:              #fff !default;
+$button-success-bg:                 $brand-success !default;
+$button-success-border:             darken($button-success-bg, 5%) !default;
+
+$button-info-color:                 #fff !default;
+$button-info-bg:                    $brand-info !default;
+$button-info-border:                darken($button-info-bg, 5%) !default;
+
+$button-warning-color:              #fff !default;
+$button-warning-bg:                 $brand-warning !default;
+$button-warning-border:             darken($button-warning-bg, 5%) !default;
+
+$button-danger-color:               #fff !default;
+$button-danger-bg:                  $brand-danger !default;
+$button-danger-border:              darken($button-danger-bg, 5%) !default;
+
+$button-link-disabled-color:        $color-grey-light-1 !default;
+
+// Allows for customizing button radius independently from global border radius
+$button-border-radius-base:         $border-radius-base !default;
+$button-border-radius-large:        $border-radius-large !default;
+$button-border-radius-small:        $border-radius-small !default;
+
+// Forms
+$cursor-disabled:                not-allowed !default;

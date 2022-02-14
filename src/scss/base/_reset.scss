@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+a,
+a:active,
+a:visited,
+a:default {
+  text-decoration: none;
+  color: $color-black;
+}
+
+a:hover {
+  color: $color-primary-dark;
+}

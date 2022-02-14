@@ -1,0 +1,106 @@
+.job-summary-container {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+
+  @include respond(tablet-landscape) {
+    justify-content: space-between;
+  }
+}
+
+.job-summary-loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+
+  img {
+    max-height: 15rem;
+  }
+}
+
+.icon--loading {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  color: $color-light;
+  font-size: 6rem;
+}
+
+.job-summary {
+  @include card(1);
+  padding: 1rem;
+  width: 100%;
+  max-width: 70rem;
+  height: 100%;
+  min-height: 35rem;
+  margin: 1rem 0;
+  background-color: white;
+
+  @include respond(tablet-landscape) {
+    max-width: 40rem;
+  }
+
+  &__header {
+    padding: 1rem 0;
+    display: flex;
+  }
+
+  &__heading {
+    flex: 70%;
+  }
+
+  &__logo {
+    flex: 20%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    height: 4rem;
+  }
+
+  &__location, &__type, &__job, &__created {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+
+    .material-icons {
+      margin-right: 1rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    height: 9rem;
+
+    // ensure any HTML interpreted
+    h1, h2, h3, h4, h5,
+    ul, li, p {
+      font-size: 1.4rem;
+      list-style: none;
+      display: inline;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-around;
+    align-items: center;
+
+    .button {
+      width: 40%;
+    }
+  }
+}

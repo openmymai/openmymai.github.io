@@ -1,0 +1,31 @@
+/**
+ Media Query Manager
+ 0 - 600px:     Phone
+ 600 - 900px:   Tabet portrait
+ 900 - 1200px:  Tablet landscape
+ 1200 - 1800px: Desktop
+ 1800px+:       Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet-portrait {
+    @media (min-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+  @if $breakpoint == tablet-landscape {
+    @media (min-width: 56.24em) {
+      @content;
+    } // 900px
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 75em) {
+      @content;
+    } // 1200px
+  }
+}

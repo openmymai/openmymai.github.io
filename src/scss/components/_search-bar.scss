@@ -1,0 +1,45 @@
+.search-bar {
+  margin: 2rem auto;
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  &__label {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &__input {
+    background-color: $color-white;
+    border: none;
+    border-radius: 1.5rem;
+    color: $color-black;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    font-size: 2.2rem;
+    width: 100%;
+    transition: max-width .3s ease-in;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,.2);
+
+    &:focus {
+
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    border: 0;
+  }
+}

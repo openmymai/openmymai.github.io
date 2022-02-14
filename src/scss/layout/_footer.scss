@@ -1,0 +1,38 @@
+.footer {
+  background: $color-black;
+  color: $color-light;
+  font-size: 1.2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+
+  a {
+    color: $color-light;
+  }
+}
+
+.keyboard {
+    display: none;
+    margin: 2rem auto;
+    width: 90%;
+    padding: 1rem;
+    background: #f2f2f2;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      width: 100%;
+      padding: .5rem;
+      font-size: 1.5rem;
+      margin-top: .5rem;
+    }
+
+    &.visible {
+        display: flex;
+    }
+}

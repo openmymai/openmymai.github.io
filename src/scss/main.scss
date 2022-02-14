@@ -1,0 +1,27 @@
+@import 'utils/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+
+/** MIXINS **/
+// @import 'mixins/vendor-prefixes';
+// @import 'mixins/opacity';
+// @import 'mixins/buttons';
+@import 'mixins/responsive';
+// @import 'mixins/card';
+// @import 'mixins/spin';
+
+/** LAYOUTS **/
+@import 'layout/container';
+@import 'layout/home';
+// @import 'layout/navigation';
+// @import 'layout/main';
+// @import 'layout/header';
+// @import 'layout/footer';
+
+/** VENDORS **/
+@import 'vendors/font-awesome/font-awesome';
+
+// @import 'components/card';
+
+@import 'themes/theme';

@@ -1,0 +1,7 @@
+.card {
+  @for $i from 1 through 6 {
+    &--#{$i} {
+      @include card($i - 1);
+    }
+  }
+}
