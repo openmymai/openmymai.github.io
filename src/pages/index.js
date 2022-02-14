@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Helmet } from 'react-helmet'
-import '../scss/main.scss'
-import bgvdo from '../videos/background-vdo.mp4'
 import Typed from 'typed.js'
+import bgvdo from '../videos/background-vdo.mp4'
+import '../scss/main.scss'
 
 // markup
 const IndexPage = () => {
@@ -20,6 +20,7 @@ const IndexPage = () => {
           `I love <span class="highlight">sharing health knowledge <3</span>`],
       typeSpeed: 80,
       backSpeed: 50,
+      loop: true,
     };
 
     typed.current = new Typed(el.current, options)
@@ -53,10 +54,16 @@ const IndexPage = () => {
         </div>
         <div className="flex">
             <div className="profile">
+              <a 
+                data-a11y="false"
+                aria-label="Link to https://openmymai.github.io/nutrigenomics"
+                href="https://openmymai.github.io/nutrigenomics"
+                className="">
               <StaticImage className="profile__image" src="../images/me.jpeg" />
+              </a>
                 <div className="profile__social-group">
                     <span className="profile__social-network">
-                        <a target="_blank" rel="noopener nofollow"
+                        <a 
                            data-a11y="false"
                            aria-label="Link to https://www.instagram.com/neutronix/"
                            href="https://www.instagram.com/neutronix/"
@@ -65,7 +72,7 @@ const IndexPage = () => {
                         </a>
                     </span>
                     <span className="profile__social-network">
-                        <a target="_blank" rel="noopener nofollow"
+                        <a 
                            data-a11y="false"
                            aria-label="Link to https://www.linkedin.com/in/sirisak-chantanate-b0b786111/"
                            href="https://www.linkedin.com/in/sirisak-chantanate-b0b786111/"
@@ -74,7 +81,7 @@ const IndexPage = () => {
                         </a>
                     </span>
                     <span className="profile__social-network">
-                        <a target="_blank" rel="noopener nofollow"
+                        <a 
                            data-a11y="false"
                            aria-label="Link to https://github.com/openmymai"
                            href="https://github.com/openmymai"
@@ -83,17 +90,16 @@ const IndexPage = () => {
                         </a>
                     </span>
                     <span className="profile__social-network">
-                        <a target="_blank" rel="noopener nofollow"
+                        <a 
                            data-a11y="false"
-                           aria-label="Link to https://openmymai.github.io/"
-                           href="https://openmymai.github.io/"
+                           aria-label="Link to https://openmymai.github.io/nutrigenomics"
+                           href="https://openmymai.github.io/nutrigenomics"
                            className="">
                             <i className="fas fa-globe-asia"></i>
                         </a>
                     </span>
                 </div>
             </div>
-
             <div className="profile-description">
                 <div className="text">Hello,
                   <div className="type-wrap">
@@ -101,6 +107,8 @@ const IndexPage = () => {
                   </div>
                 </div>
             </div>
+            
+            
         </div>
     </section>
     </div>

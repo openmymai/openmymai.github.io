@@ -1,5 +1,21 @@
-@import 'utils/variables';
+@font-face {
+  font-family: 'rsuregular';
+  src: url('./fonts/rsu-webfont.woff2') format('woff2'),
+       url('./fonts/rsu-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
+
+@font-face {
+  font-family: 'promptregular';
+  src: url('./fonts/prompt-regular-webfont.woff2') format('woff2'),
+       url('./fonts/prompt-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@import 'utils/variables';
 @import 'base/reset';
 @import 'base/typography';
 
@@ -25,3 +41,9 @@
 // @import 'components/card';
 
 @import 'themes/theme';
+
+$font-stack: promptregular;
+
+body {
+	font: 100% $font-stack;
+}
