@@ -99,16 +99,13 @@ const IndexPage = () => {
                         </a>
                     </span>
                 </div>
-            </div>
-            <div className="profile-description">
-                <div className="text">Hello,
-                  <div className="type-wrap">
-                      <span style={{ whiteSpace: 'pre' }} ref={el} />
-                  </div>
+            </div>            
+              <h1><div className="text">Hello,</div></h1>
+              <h1>
+                <div className="text">
+                  <span style={{ whiteSpace: 'pre' }} ref={el} />
                 </div>
-            </div>
-            
-            
+              </h1>
         </div>
     </section>
     </div>
