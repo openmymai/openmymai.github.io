@@ -102,12 +102,14 @@ const Learning = () => {
         <div className="flex">
           <h1>
             <center>
-              <div className="text"><span class="highlight">บทวิปัสนาภาวนา</span></div>
-              <div className="text"><span class="highlight">ฝึกนำไปใช้ในชีวิตประจำวัน</span></div>
+              <div><span class="highlight">บทวิปัสนาภาวนา</span></div>
+              <br />
+              <div><span class="highlight">ฝึกนำไปใช้ในชีวิตประจำวัน</span></div>
+              <br />
             </center>
           </h1>
           <h1>
-            <div className="text">
+            <div>
               <span style={{ whiteSpace: 'pre' }} ref={el} />
             </div>
           </h1>
