@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react'
+import { Helmet } from 'react-helmet'
 import Typed from 'typed.js'
+import bgvdo from '../videos/sea.mp4'
 import '../scss/main.scss'
 
 const Learning = () => {
@@ -95,19 +97,33 @@ const Learning = () => {
   }, [])
   return (
     <>
-      <div className=''>
-        <center>
-          <h1>
-            <br />
-            <div>บทวิปัสนาภาวนา</div>
-            <br />
-            <div>ฝึกนำไปใช้ในชีวิตประจำวัน</div>
-            <br />
-              <div>
+      <Helmet>
+        <title>I am Sirisak Chantanate</title>
+        <meta itemprop="name" content="Sirisak Chantanate" />
+        <meta name="Description"
+              content="Nutrigenomics lover, I really love share the health knowledge." />
+
+        <meta name="twitter:title" content="Sirisak Chantanate" />
+        <meta name="twitter:description"
+              content="Nutrigenomics lover, I really love share the health knowledge." />
+        <meta property="og:title" />
+        <meta property="og:url" content="https://openmymai.github.io/" />
+        <meta property="og:description"
+              content="Nutrigenomics lover, I really love share the health knowledge." />
+      </Helmet>
+      <div className="overflow-wrap">
+        <section id="home" className="flex section--dark">
+            <div className="bg-video">
+                <video className="bg-video__content" autoPlay={true} loop muted playsInline>
+                    <source src={bgvdo} type="video/mp4" />
+                </video>
+            </div>
+            <h1>
+              <div className="text">
                 <span style={{ whiteSpace: 'pre' }} ref={el} />
               </div>
-          </h1>
-        </center>
+            </h1>
+        </section>
       </div>
     </>
   )
