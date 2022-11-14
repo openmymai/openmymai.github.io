@@ -5,6 +5,7 @@ import Typed from 'typed.js'
 import bgvdo from '../videos/mountain.mp4'
 import '../scss/main.scss'
 
+
 // markup
 const Lesson = () => {
 
