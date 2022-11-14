@@ -91,7 +91,7 @@ const Lesson = () => {
           `ไม่มีตัวตนเป็นของตนเอง ไม่ควรไปยึดมั่นถือมั่นว่าสิ่งนั้นเป็นของเรา เป็นเรา เป็นตัวตนของเรา`,
           `ไม่เที่ยงเกิดดับ`
         ],
-      typeSpeed: 50,
+      typeSpeed: 45,
       loop: true,
     };
     typed.current = new Typed(el.current, options)
