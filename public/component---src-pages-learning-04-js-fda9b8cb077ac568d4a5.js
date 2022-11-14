@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknutrigenomics=self.webpackChunknutrigenomics||[]).push([[867],{8027:function(e,n,a){a.r(n);a(7294),a(5414),a(4952),a(7958);n.default=LeDayLearning04},7958:function(e,n,a){n.Z=a.p+"static/sea-db4e81ee7fa8a3a33c883ff95bb7e744.mp4"}}]);
+//# sourceMappingURL=component---src-pages-learning-04-js-fda9b8cb077ac568d4a5.js.map

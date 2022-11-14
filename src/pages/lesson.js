@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Helmet } from 'react-helmet'
 import Typed from 'typed.js'
-import bgvdo from '../videos/background-vdo.mp4'
+import bgvdo from '../videos/mountain.mp4'
 import '../scss/main.scss'
 
 // markup
