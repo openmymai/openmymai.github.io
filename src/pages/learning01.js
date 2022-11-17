@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import { Helmet } from 'react-helmet'
 import Typed from 'typed.js'
 import bgvdo from '../videos/sea.mp4'
 import '../scss/main.scss'
@@ -47,7 +46,7 @@ const DayLearning01 = () => {
         `ไม่ควรไปยึดมั่นถือมั่นถือมั่นว่า โลกและชีวิตเป็นของเรา เป็นเรา เป็นตัวตนของเรา`,
         `ไม่เที่ยงเกิดดับ`,
 
-        `ฝึกนำไปใช้ในชีวิตประจำวัน (1)`,
+        
         `ไม่เที่ยงเกิดดับ เหตุปัจจัยของตาเห็นรูปไม่เที่ยงเกิดดับ`,
         `ตาเห็นรูปไม่เที่ยงเกิดดับ ตัวฉันไม่เที่ยงเกิดดับ ผลต่อเนื่องของตาเห็นรูปไม่เที่ยงเกิดดับ`,
         `มโนกรรมไม่เที่ยงเกิดดับ วจีกรรมไม่เที่ยงเกิดดับ กายกรรมไม่เที่ยงเกิดดับ`,
@@ -96,20 +95,6 @@ const DayLearning01 = () => {
   }, [])
   return (
     <>
-      <Helmet>
-        <title>I am Sirisak Chantanate</title>
-        <meta itemprop="name" content="Sirisak Chantanate" />
-        <meta name="Description"
-              content="Nutrigenomics lover, I really love share the health knowledge." />
-
-        <meta name="twitter:title" content="Sirisak Chantanate" />
-        <meta name="twitter:description"
-              content="Nutrigenomics lover, I really love share the health knowledge." />
-        <meta property="og:title" />
-        <meta property="og:url" content="https://openmymai.github.io/" />
-        <meta property="og:description"
-              content="Nutrigenomics lover, I really love share the health knowledge." />
-      </Helmet>
       <div className="overflow-wrap">
         <section id="home" className="flex section--dark">
             <div className="bg-video">
