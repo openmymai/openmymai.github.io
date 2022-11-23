@@ -22,6 +22,7 @@ const DayLearning10 = () => {
         `ไม่เที่ยงเกิดดับ เสียงนกไม่เที่ยงเกิดดับ ตัวฉันไม่เที่ยงเกิดดับ`,
       ],
       typeSpeed: 45,
+      fadeOut: true,
       loop: true,
     };
 

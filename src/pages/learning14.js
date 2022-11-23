@@ -15,6 +15,7 @@ const DayLearning14 = () => {
         `ไม่เที่ยงเกิดดับคือสุข สุขคือไม่เที่ยงเกิดดับ`,
       ],
       typeSpeed: 45,
+      fadeOut: true,
       loop: true,
     };
 

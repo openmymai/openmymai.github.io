@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
 import bgvdo from '../videos/sea.mp4'
 import '../scss/main.scss'
+import '../scss/fonts/stylesheet.css'
 
 const DayLearning01 = () => {
 
@@ -84,6 +85,7 @@ const DayLearning01 = () => {
         `มโนกรรมไม่เที่ยงเกิดดับ วจีกรรมไม่เที่ยงเกิดดับ กายกรรมไม่เที่ยงเกิดดับ`,
       ],
       typeSpeed: 45,
+      fadeOut: true,
       loop: true,
     };
 

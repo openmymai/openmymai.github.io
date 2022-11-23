@@ -65,6 +65,7 @@ const DayLearning02 = () => {
 
       ],
       typeSpeed: 45,
+      fadeOut: true,
       loop: true,
     };
 
