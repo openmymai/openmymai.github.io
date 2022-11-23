@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import Typed from 'typed.js'
-import bgvdo from '../videos/indexbg.mp4'
+import bgvdo from '../videos/bgindex.mp4'
 import '../scss/main.scss'
 
 // markup
@@ -79,7 +79,7 @@ const IndexPage = () => {
                         <a 
                            data-a11y="false"
                            aria-label="Link to https://openmymai.github.io/nutrigenomics"
-                           href="https://openmymai.github.io/nutrigenomics"
+                           href="https://protandimth.gtsb.io/"
                            className="">
                             <i className="fas fa-globe-asia"></i>
                         </a>
