@@ -91,6 +91,7 @@ const Lesson = () => {
           `ไม่เที่ยงเกิดดับ`
         ],
       typeSpeed: 45,
+      fadeOut: true,
       loop: true,
     };
     typed.current = new Typed(el.current, options)
