@@ -118,6 +118,13 @@ const Lesson = () => {
                 </div>
               </h1>        
           </div>
+          <div className="next">
+              <a className="space" href="javascript:history.go(-1)" >
+                <i className="fa-solid fa-angle-left fa-5x"></i>
+              </a>
+              
+
+            </div>
       </section>
       </div>
     </>

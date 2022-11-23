@@ -65,6 +65,15 @@ const DayLearning08 = () => {
                 <span style={{ whiteSpace: 'pre' }} ref={el} />
               </div>
             </h1>
+            <div className="next">
+              <a className="space" href="javascript:history.go(-1)" >
+                <i className="fa-solid fa-angle-left fa-5x"></i>
+              </a>
+              
+              <a href="/learning09" >
+                <i className="fa-solid fa-angle-right fa-5x"></i>
+              </a>
+            </div>
         </section>
       </div>
     </>
