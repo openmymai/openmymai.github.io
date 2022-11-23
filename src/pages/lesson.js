@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import Typed from 'typed.js'
 import bgvdo from '../videos/mountain.mp4'
 import '../scss/main.scss'
@@ -110,64 +109,14 @@ const Lesson = () => {
                   <source src={bgvdo} type="video/mp4" />
               </video>
           </div>
-          <div className="flex">
-              <div className="profile">
-                <a 
-                  data-a11y="false"
-                  aria-label="Link to https://openmymai.github.io/nutrigenomics"
-                  href="https://openmymai.github.io/nutrigenomics"
-                  className="">
-                <StaticImage className="profile__image" src="../images/me.jpeg" />
-                </a>
-                  <div className="profile__social-group">
-                      <span className="profile__social-network">
-                          <a 
-                            data-a11y="false"
-                            aria-label="Link to https://www.instagram.com/neutronix/"
-                            href="https://www.instagram.com/neutronix/"
-                            className="">
-                              <i className="fab fa-instagram"></i>
-                          </a>
-                      </span>
-                      <span className="profile__social-network">
-                          <a 
-                            data-a11y="false"
-                            aria-label="Link to https://www.linkedin.com/in/sirisak-chantanate-b0b786111/"
-                            href="https://www.linkedin.com/in/sirisak-chantanate-b0b786111/"
-                            className="">
-                              <i className="fab fa-linkedin"></i>
-                          </a>
-                      </span>
-                      <span className="profile__social-network">
-                          <a 
-                            data-a11y="false"
-                            aria-label="Link to https://github.com/openmymai"
-                            href="https://github.com/openmymai"
-                            className="">
-                              <i className="fab fa-github"></i>
-                          </a>
-                      </span>
-                      <span className="profile__social-network">
-                          <a 
-                            data-a11y="false"
-                            aria-label="Link to https://openmymai.github.io/nutrigenomics"
-                            href="https://openmymai.github.io/nutrigenomics"
-                            className="">
-                              <i className="fas fa-globe-asia"></i>
-                          </a>
-                      </span>
-                  </div>
-              </div>
-              
+          <div className="flex">      
               <h1><div className="text">วิปัสสนาภาวนา พิจารณาขันธ์ 5 อินทรีย์ 6</div></h1>
               
               <h1>
                 <div className="text">
                   <span style={{ whiteSpace: 'pre' }} ref={el} />
                 </div>
-              </h1>
-              
-              
+              </h1>        
           </div>
       </section>
       </div>
