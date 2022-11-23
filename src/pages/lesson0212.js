@@ -165,13 +165,6 @@ const Lesson0212 = () => {
                 </div>
               </h1>        
           </div>
-          <div className="listparagraph">
-            <a href="/praise" >
-              <span className="highlight" style={{fontSize: "2.5em"}}>
-                หน้าแรก
-              </span>
-            </a>
-          </div>
           <div className="next">
             <a className="space" style={{cursor:'pointer'}} onClick={() => navigate(-1)}>
               <i className="fa-solid fa-angle-left fa-5x"></i>

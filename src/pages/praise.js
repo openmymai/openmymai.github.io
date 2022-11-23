@@ -98,6 +98,14 @@ const Praise = () => {
               </a>
               <br />
               <br />
+
+              <a href="/lesson0301" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  ว่าด้วยความเป็นอนิจจัง ทุกขัง อนัตตา
+                </span>
+              </a>
+              <br />
+              <br />
             </div>
               
             <h1>
