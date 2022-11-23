@@ -41,6 +41,11 @@ const DayLearning05 = () => {
                     <source src={bgvdo} type="video/mp4" />
                 </video>
             </div>
+            <a href="/praise" >
+              <span className="highlight" style={{fontSize: "2.5em"}}>
+                หน้าแรก
+              </span>
+            </a>
             <h1>
               <div className="text">
                 <span style={{ whiteSpace: 'pre' }} ref={el} />

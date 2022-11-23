@@ -151,7 +151,12 @@ const Lesson0212 = () => {
                   <source src={bgvdo} type="video/mp4" />
               </video>
           </div>
-          <div className="flex">      
+          <div className="flex">
+              <a href="/praise" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  หน้าแรก
+                </span>
+              </a>
               <h1><div className="text">โลกและชีวิตความรู้สึกเป็นอันเดียวกัน + ชื่อ</div></h1>
               
               <h1>

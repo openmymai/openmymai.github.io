@@ -97,7 +97,12 @@ const Lesson0206 = () => {
                   <source src={bgvdo} type="video/mp4" />
               </video>
           </div>
-          <div className="flex">      
+          <div className="flex">
+              <a href="/praise" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  หน้าแรก
+                </span>
+              </a>
               <h1><div className="text">ฝึกตามทันกายกรรม</div></h1>
               
               <h1>
@@ -106,13 +111,7 @@ const Lesson0206 = () => {
                 </div>
               </h1>        
           </div>
-          <div className="listparagraph">
-            <a href="/praise" >
-              <span className="highlight" style={{fontSize: "2.5em"}}>
-                หน้าแรก
-              </span>
-            </a>
-          </div>
+          
           <div className="next">
             <a className="space" style={{cursor:'pointer'}} onClick={() => navigate(-1)}>
               <i className="fa-solid fa-angle-left fa-5x"></i>

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import { navigate } from 'gatsby'
 import Typed from 'typed.js'
 import bgvdo from '../videos/sea.mp4'
 import '../scss/main.scss'
@@ -75,13 +74,7 @@ const Praise = () => {
                     <source src={bgvdo} type="video/mp4" />
                 </video>
             </div>
-            <h1>
-              <div className="text">
-                <span style={{ whiteSpace: `pre` }} ref={el} />
-              </div>
-            </h1>
-
-            <div className="listparagraph">
+            <div>
               <a href="/learning01" >
                 <span className="highlight" style={{fontSize: "2.5em"}}>
                   บทนำไปใช้ในชีวิตประจำวัน
@@ -89,6 +82,7 @@ const Praise = () => {
               </a>
               <br />
               <br />
+              
               <a href="/lesson0101" >
                 <span className="highlight" style={{fontSize: "2.5em"}}>
                   ธัมมจักกัปปวัตตนสูตร ยถาภูตญาณทัสสนะ
@@ -96,6 +90,7 @@ const Praise = () => {
               </a>
               <br />
               <br />
+              
               <a href="/lesson0201" >
                 <span className="highlight" style={{fontSize: "2.5em"}}>
                   หลักสูตรอนาคามีผล
@@ -104,16 +99,12 @@ const Praise = () => {
               <br />
               <br />
             </div>
-
-            <div className="next">
-              <a className="space" style={{cursor:'pointer'}} onClick={() => navigate(-1)}>
-                <i className="fa-solid fa-angle-left fa-5x"></i>
-              </a>
               
-              <a href="/lesson" >
-                <i className="fa-solid fa-angle-right fa-5x"></i>
-              </a>
-            </div>
+            <h1>
+              <div className="text">
+                <span style={{ whiteSpace: `pre` }} ref={el} />
+              </div>
+            </h1>
         </section>
 
       </div>
