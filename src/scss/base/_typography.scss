@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Prompt-Thin";
+  src: url("./fonts/Prompt-Thin.ttf");
+}
+@font-face {
   font-family: "Prompt";
   src: url("./fonts/Prompt-Regular.ttf");
 }
@@ -11,11 +15,12 @@
   src: url("./fonts/Prompt-Bold.ttf");
 }
 
+$font-regular: 'Prompt';
 $font-bold: 'Prompt-Bold';
 $font-semibold: 'Prompt-SemiBold';
-$font-regular: 'Prompt';
+$font-thin: 'Prompt-Thin';
 
 body {
-  font-family: $font-regular, sans-serif;
-  font-size: 2em;
+  font-family: $font-thin, sans-serif;
+  font-size: 1em;
 }
