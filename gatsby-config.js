@@ -6,12 +6,7 @@ module.exports = {
       title: `Nutrigenomics`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [ "gatsby-plugin-sass", {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": "303423741"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: [ "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -23,5 +18,20 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  },
+  {
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      // You can add multiple tracking ids and a pageview event will be fired for all of them.
+      trackingIds: [
+        "G-QZBVQTHS2Y", // Google Analytics / GA
+      ],
+      // This object is used for configuration specific to this plugin
+      pluginConfig: {
+        // Puts tracking script in the head instead of the body
+        head: true,
+      },
+    },
+  },
+  ],
 };
