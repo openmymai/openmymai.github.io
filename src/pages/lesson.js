@@ -92,6 +92,7 @@ const Lesson = () => {
         ],
       typeSpeed: 45,
       fadeOut: true,
+      fadeOutDelay: 0,
       loop: true,
     };
     typed.current = new Typed(el.current, options)
