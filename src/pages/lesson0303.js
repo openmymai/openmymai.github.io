@@ -133,7 +133,7 @@ const Lesson0303 = () => {
               <i className="fa-solid fa-angle-left fa-5x"></i>
             </a>
             
-            <a href="/lesson0304" >
+            <a className="space" href="/lesson0304" >
               <i className="fa-solid fa-angle-right fa-5x"></i>
             </a>
           </div>

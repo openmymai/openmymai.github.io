@@ -60,7 +60,7 @@ const DayLearning11 = () => {
                 <i className="fa-solid fa-angle-left fa-5x"></i>
               </a>
               
-              <a href="/learning12" >
+              <a className="space" href="/learning12" >
                 <i className="fa-solid fa-angle-right fa-5x"></i>
               </a>
             </div>

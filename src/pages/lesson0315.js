@@ -91,7 +91,7 @@ const Lesson0315 = () => {
               <i className="fa-solid fa-angle-left fa-5x"></i>
             </a>
             
-            <a href="/lesson0316" >
+            <a className="space" href="/lesson0316" >
               <i className="fa-solid fa-angle-right fa-5x"></i>
             </a>
           </div>
