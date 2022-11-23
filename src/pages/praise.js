@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { navigate } from 'gatsby'
 import Typed from 'typed.js'
 import bgvdo from '../videos/sea.mp4'
 import '../scss/main.scss'
@@ -80,12 +81,36 @@ const Praise = () => {
               </div>
             </h1>
 
+            <div className="listparagraph">
+              <a href="/learning01" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  บทนำไปใช้ในชีวิตประจำวัน
+                </span>
+              </a>
+              <br />
+              <br />
+              <a href="/lesson0101" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  ธัมมจักกัปปวัตตนสูตร ยถาภูตญาณทัสสนะ
+                </span>
+              </a>
+              <br />
+              <br />
+              <a href="/lesson0201" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  หลักสูตรอนาคามีผล
+                </span>
+              </a>
+              <br />
+              <br />
+            </div>
+
             <div className="next">
-              <a className="space" href="javascript:history.go(-1)" >
+              <a className="space" style={{cursor:'pointer'}} onClick={() => navigate(-1)}>
                 <i className="fa-solid fa-angle-left fa-5x"></i>
               </a>
               
-              <a href="/learning01" >
+              <a href="/lesson" >
                 <i className="fa-solid fa-angle-right fa-5x"></i>
               </a>
             </div>
