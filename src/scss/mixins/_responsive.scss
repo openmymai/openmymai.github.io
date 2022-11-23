@@ -13,6 +13,11 @@ $breakpoint argument choices:
 - big-desktop
 */
 @mixin respond($breakpoint) {
+  @if $breakpoint == mobile-device {
+    @media (min-width: 25em) {
+      @content;
+    } // 400px
+  }
   @if $breakpoint == tablet-portrait {
     @media (min-width: 37.5em) {
       @content;

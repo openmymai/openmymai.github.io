@@ -76,7 +76,7 @@ const Praise = () => {
             </div>
             <h1>
               <div className="text">
-                <span style={{ whiteSpace: 'pre' }} ref={el} />
+                <span style={{ whiteSpace: `pre` }} ref={el} />
               </div>
             </h1>
 
