@@ -235,6 +235,10 @@ const Lesson0409 = () => {
             <a className="space" style={{cursor:'pointer'}} onClick={() => navigate(-1)}>
               <i className="fa-solid fa-angle-left fa-5x"></i>
             </a>
+
+            <a className="space" href="/lesson0410" >
+              <i className="fa-solid fa-angle-right fa-5x"></i>
+            </a>
           </div>
       </section>
       </div>
