@@ -3,7 +3,7 @@ html {
   height: 100%;
 
   @include respond(mobile-device) {
-    font-size: 28%;
+    font-size: 65%;
   }
 
   @include respond(tablet-landscape) {

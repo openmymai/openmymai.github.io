@@ -16,7 +16,7 @@ const IndexPage = () => {
           `I'm <span class="highlight">Sirisak Chantanate</span>`,
           `Nutrigenomics Lover`,
           `Also I'm <span class="highlight">Networker</span> <i class="fas fa-globe-asia"></i>`,
-          `I love <span class="highlight">sharing health knowledge <3</span>`],
+          `I love <span class="highlight">sharing all knowledges <3</span>`],
       typeSpeed: 45,
       backSpeed: 50,
       loop: true,
