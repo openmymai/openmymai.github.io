@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
-import bgvdo from '../videos/sea.mp4'
+import bgvdo from '../videos/sea02.mp4'
 import '../scss/main.scss'
 
 const Praise = () => {
@@ -197,6 +197,14 @@ const Praise = () => {
               <a href="/lesson0301" >
                 <span className="highlight" style={{fontSize: "2.5em"}}>
                   ว่าด้วยความเป็นอนิจจัง ทุกขัง อนัตตา
+                </span>
+              </a>
+              <br />
+              <br />
+
+              <a href="/lesson0301" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  ว่าด้วย อดีต อนาคต ปัจจุบัน ตามความเป็นจริง
                 </span>
               </a>
               <br />
