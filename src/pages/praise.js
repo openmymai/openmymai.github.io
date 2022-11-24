@@ -202,7 +202,7 @@ const Praise = () => {
               <br />
               <br />
 
-              <a href="/lesson0301" >
+              <a href="/lesson0401" >
                 <span className="highlight" style={{fontSize: "2.5em"}}>
                   ว่าด้วย อดีต อนาคต ปัจจุบัน ตามความเป็นจริง
                 </span>
