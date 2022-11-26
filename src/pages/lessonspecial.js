@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { SEO } from '../components/seo'
 import Typed from 'typed.js'
 import bgvdo from '../videos/mountain.mp4'
 import '../scss/main.scss'

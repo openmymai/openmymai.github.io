@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { navigate } from 'gatsby'
+import { SEO } from '../components/seo'
 import Typed from 'typed.js'
 import bgvdo from '../videos/mountain02.mp4'
 import '../scss/main.scss'
@@ -156,3 +157,7 @@ const Lesson0307 = () => {
 }
 
 export default Lesson0307
+
+export const Head = () => (
+  <SEO title="Lesson0307" />
+)
