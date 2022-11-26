@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { SEO } from '../components/seo'
 import Typed from 'typed.js'
 import bgvdo from '../videos/sea02.mp4'
 import '../scss/main.scss'
@@ -228,3 +229,8 @@ const Praise = () => {
 }
 
 export default Praise
+
+
+export const Head = () => (
+  <SEO title="Praise" />
+)

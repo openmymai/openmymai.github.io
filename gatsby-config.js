@@ -3,8 +3,9 @@ module.exports = {
     resolve: 'gatsby-plugin-sass',
   }],
   siteMetadata: {
-      title: `Nutrigenomics`,
-    siteUrl: `https://www.yourdomain.tld`
+      title: `I am Sirisak Chantanate`,
+      description: `Nutrigenomics lover, I really love share the health knowledge.`,
+    siteUrl: `https://openmymai.github.io`
   },
   plugins: [ "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
