@@ -138,7 +138,7 @@ const Lesson0505 = () => {
                   หน้าแรก
                 </span>
               </a>
-              <h1><div className="text">ภิกขุวรรค จูฬราหุโลวาทสูตร</div></h1>
+              <h1><div className="text">อานาปานสติภาวนา</div></h1>
               
               <h1>
                 <div className="text">

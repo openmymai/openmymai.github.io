@@ -245,7 +245,7 @@ const Lesson0503 = () => {
                   หน้าแรก
                 </span>
               </a>
-              <h1><div className="text">ภิกขุวรรค จูฬราหุโลวาทสูตร</div></h1>
+              <h1><div className="text">มหาราหุโลวาทสูตร</div></h1>
               
               <h1>
                 <div className="text">
