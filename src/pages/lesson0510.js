@@ -333,7 +333,7 @@ const Lesson0510 = () => {
                   หน้าแรก
                 </span>
               </a>
-              <h1><div className="text">ติมพรุกขสูตร</div></h1>
+              <h1><div className="text">ปริวีมังสนสูตร</div></h1>
               
               <h1>
                 <div className="text">
