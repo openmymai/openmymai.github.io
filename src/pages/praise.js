@@ -211,7 +211,13 @@ const Praise = () => {
               <br />
               <br />
 
-              
+              <a href="/lesson0501" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  บทวิปัสสนาภาวนา ว่าด้วยปฏิจจสมุปบาท
+                </span>
+              </a>
+              <br />
+              <br />
 
             </div>
               
