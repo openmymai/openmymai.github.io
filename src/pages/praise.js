@@ -219,6 +219,14 @@ const Praise = () => {
               <br />
               <br />
 
+              <a href="/lesson0501" >
+                <span className="highlight" style={{fontSize: "2.5em"}}>
+                  พระสุตตันตปิฎก เล่ม ๙ สังยุตตนิกาย ขันธวารวรรค
+                </span>
+              </a>
+              <br />
+              <br />
+
             </div>
               
             <h1>
