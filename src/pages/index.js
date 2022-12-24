@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { SEO } from '../components/seo'
 import Typed from 'typed.js'
-import bgvdo from '../videos/bgindex.mp4'
+import bgvdo from '../videos/mountain.mp4'
 import '../scss/main.scss'
 
 // markup

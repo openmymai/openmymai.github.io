@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { navigate } from 'gatsby'
 import { SEO } from '../components/seo'
 import Typed from 'typed.js'
-import bgvdo from '../videos/mountain03.mp4'
+import bgvdo from '../videos/mountain.mp4'
 import '../scss/main.scss'
 
 const DayLearning05 = () => {
