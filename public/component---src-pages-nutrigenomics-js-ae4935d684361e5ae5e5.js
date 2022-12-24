@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunknutrigenomics=self.webpackChunknutrigenomics||[]).push([[577],{930:function(e,n,t){t.r(n);var u=t(7294);n.default=function(){return u.createElement("div",null,u.createElement(u.Fragment,null,"Hello There"))}}}]);
-//# sourceMappingURL=component---src-pages-nutrigenomics-js-ae4935d684361e5ae5e5.js.map
