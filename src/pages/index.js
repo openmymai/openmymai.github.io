@@ -80,7 +80,7 @@ const IndexPage = () => {
                         <a 
                            data-a11y="false"
                            aria-label="Link to https://openmymai.github.io/nutrigenomics"
-                           href="https://protandimth.gtsb.io/"
+                           href="https://lifelearning.vercel.app/"
                            className="">
                             <i className="fas fa-globe-asia"></i>
                         </a>
