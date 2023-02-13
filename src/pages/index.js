@@ -79,7 +79,7 @@ const IndexPage = () => {
                     <span className="profile__social-network">
                         <a 
                            data-a11y="false"
-                           aria-label="Link to https://openmymai.github.io/nutrigenomics"
+                           aria-label="Link to https://lifelearning.vercel.app/"
                            href="https://lifelearning.vercel.app/"
                            className="">
                             <i className="fas fa-globe-asia"></i>
