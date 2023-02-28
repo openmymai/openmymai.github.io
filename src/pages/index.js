@@ -19,7 +19,7 @@ const IndexPage = () => {
           `Solution Architect`,
           `Software Engineer`,
           `Network Specialist`,
-          `Also I'm <span class="highlight">CCIE R&S #18148</span> <i class="fas fa-globe-asia"></i>`,
+          `Also I'm <span class="highlight">CCIE Routing and Switching #18148</span> <i class="fas fa-globe-asia"></i>`,
           `I love <span class="highlight">sharing all knowledges <3</span>`],
       typeSpeed: 45,
       backSpeed: 50,
