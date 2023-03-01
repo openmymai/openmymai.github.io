@@ -82,12 +82,23 @@ const IndexPage = () => {
                     <span className="profile__social-network">
                         <a 
                            data-a11y="false"
+                           aria-label="Link to https://www.youtube.com/channel/UCNyi06GbM49kasvouCD9qvQ?sub_confirmation=1"
+                           href="https://www.youtube.com/channel/UCNyi06GbM49kasvouCD9qvQ?sub_confirmation=1"
+                           className="">
+                            <i className="fa-brands fa-youtube"></i>
+                        </a>
+                    </span>
+                    <span className="profile__social-network">
+                        <a 
+                           data-a11y="false"
                            aria-label="Link to https://lifelearning.vercel.app/"
                            href="https://lifelearning.vercel.app/"
                            className="">
                             <i className="fas fa-globe-asia"></i>
                         </a>
                     </span>
+
+                    
                 </div>
             </div>            
               <h1><div className="text">Hello,</div></h1>
