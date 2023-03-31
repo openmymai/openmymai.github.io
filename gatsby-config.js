@@ -4,7 +4,7 @@ module.exports = {
   }],
   siteMetadata: {
       title: `I am Sirisak Chantanate`,
-      description: `Nutrigenomics lover, I really love share the health knowledge.`,
+      description: `I love sharing knowledge to help people from suffering and to achieve life goal.`,
     siteUrl: `https://openmymai.github.io`
   },
   plugins: [ "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {

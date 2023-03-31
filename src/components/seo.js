@@ -19,11 +19,11 @@ export const SEO = ({ title, description, pathname }) => {
       
           <meta name="twitter:title" content="Sirisak Chantanate" />
           <meta name="twitter:description"
-                content="Nutrigenomics lover, I really love share the health knowledge." />
+                content="I love sharing knowledge to help people from suffering and to achieve life goal." />
           <meta property="og:title" />
           <meta property="og:url" content={seo.url} />
           <meta property="og:description"
-                content="Nutrigenomics lover, I really love share the health knowledge." />
+                content="I love sharing knowledge to help people from suffering and to achieve life goal." />
         </>
       )
 }

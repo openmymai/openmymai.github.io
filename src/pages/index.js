@@ -15,7 +15,6 @@ const IndexPage = () => {
       strings: [
           `...`,
           `I'm <span class="highlight">Sirisak Chantanate</span>`,
-          `Nutrigenomics Lover`,
           `Solution Architect`,
           `Software Engineer`,
           `Network Specialist`,
