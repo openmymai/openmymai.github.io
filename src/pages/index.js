@@ -63,8 +63,8 @@ const IndexPage = () => {
                     <span className="profile__social-network">
                         <a 
                            data-a11y="false"
-                           aria-label="Link to https://www.linkedin.com/in/sirisak-chantanate-b0b786111/"
-                           href="https://www.linkedin.com/in/sirisak-chantanate-b0b786111/"
+                           aria-label="Link to https://www.linkedin.com/in/sirisak-chantanate-0609b4297/"
+                           href="https://www.linkedin.com/in/sirisak-chantanate-0609b4297/"
                            className="">
                             <i className="fab fa-linkedin"></i>
                         </a>
