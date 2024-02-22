@@ -149,7 +149,7 @@ const Praise = () => {
         `เป็นเนื้อนาบุญของโลก`,
         `ไม่มีนาบุญอื่นยิ่งกว่า ดังนี้`,
       ],
-      typeSpeed: 45,
+      typeSpeed: 55,
       fadeOut: true,
       fadeOutDelay: 0,
       loop: true,

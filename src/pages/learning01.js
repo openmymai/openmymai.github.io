@@ -199,7 +199,7 @@ const DayLearning01 = () => {
         `วจีกรรมไม่เที่ยงเกิดดับ `,
         `กายกรรมไม่เที่ยงเกิดดับ`,
       ],
-      typeSpeed: 45,
+      typeSpeed: 55,
       fadeOut: true,
       fadeOutDelay: 0,
       loop: true,
