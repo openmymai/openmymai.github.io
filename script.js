@@ -212,7 +212,7 @@ window.addEventListener('load', function () {
       this.maxSpeed = 4;
       this.projectiles = [];
       this.image = document.getElementById('player');
-      this.powerUp = false;
+      this.powerUp = true;
       this.powerUpTimer = 0;
       this.powerUpLimit = 1000000;
     }
@@ -261,7 +261,7 @@ window.addEventListener('load', function () {
         } else {
           this.powerUpTimer += deltaTime;
           this.frameY = 1;
-          this.game.ammo += 0.1;
+          this.game.ammo += 1;
         }
       }
     }
