@@ -87,6 +87,15 @@ const IndexPage = () => {
                             <i className="fas fa-globe-asia"></i>
                         </a>
                     </span>
+                    <span className="profile__social-network">
+                        <a 
+                           data-a11y="false"
+                           aria-label="Link to Seahorse"
+                           href="seahorse.html"
+                           className="">
+                            <i className="fas fa-gamepad"></i>
+                        </a>
+                    </span>
 
                     
                 </div>
