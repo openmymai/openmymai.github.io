@@ -636,9 +636,9 @@ window.addEventListener('load', function () {
       this.ammoInterval = 350;
       this.gameOver = false;
       this.score = 0;
-      this.winningScore = 800;
+      this.winningScore = 2500;
       this.gameTime = 0;
-      this.timeLimit = 2000000;
+      this.timeLimit = 500000;
       this.speed = 1;
       this.debug = false;
     }
