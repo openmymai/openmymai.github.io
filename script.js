@@ -10,7 +10,10 @@ window.addEventListener('load', function () {
       this.game = game;
       window.addEventListener('keydown', (e) => {
         if (
-          (e.key === 'ArrowUp' || e.key === 'ArrowDown') &&
+          (e.key === 'ArrowUp' ||
+            e.key === 'ArrowDown' ||
+            e.key === 'ArrowLeft' ||
+            e.key === 'ArrowRight') &&
           this.game.keys.indexOf(e.key) === -1
         ) {
           this.game.keys.push(e.key);
@@ -206,7 +209,7 @@ window.addEventListener('load', function () {
       this.frameY = 0;
       this.maxFrame = 37;
       this.speedY = 0;
-      this.maxSpeed = 3;
+      this.maxSpeed = 4;
       this.projectiles = [];
       this.image = document.getElementById('player');
       this.powerUp = false;
@@ -217,12 +220,24 @@ window.addEventListener('load', function () {
       if (this.game.keys.includes('ArrowUp')) this.speedY = -this.maxSpeed;
       else if (this.game.keys.includes('ArrowDown'))
         this.speedY = this.maxSpeed;
-      else this.speedY = 0;
+      else if (this.game.keys.includes('ArrowLeft'))
+        this.speedX = -this.maxSpeed;
+      else if (this.game.keys.includes('ArrowRight'))
+        this.speedX = this.maxSpeed;
+      else {
+        this.speedY = 0;
+        this.speedX = 0;
+      }
       this.y += this.speedY;
+      this.x += this.speedX;
       // vertical boundaries
       if (this.y > this.game.height - this.height * 0.5)
         this.y = this.game.height - this.height * 0.5;
       else if (this.y < -this.height * 0.5) this.y = -this.height * 0.5;
+      // horizontal boundaries
+      if (this.x > this.game.width - this.width * 0.5)
+        this.x = this.game.width - this.width * 0.5;
+      else if (this.x < -this.width * 0.5) this.x = -this.width * 0.5;
       // handle projectiles
       this.projectiles.forEach((projectile) => {
         projectile.update(deltaTime);
