@@ -126,7 +126,7 @@ window.addEventListener('load', function () {
       } else {
         this.timer += deltaTime;
       }
-      if (this.x > this.game.width * 0.8) this.markedForDeletion = true;
+      if (this.x > this.game.width * 0.95) this.markedForDeletion = true;
     }
     draw(context) {
       context.drawImage(
