@@ -214,7 +214,7 @@ window.addEventListener('load', function () {
       this.image = document.getElementById('player');
       this.powerUp = false;
       this.powerUpTimer = 0;
-      this.powerUpLimit = 10000;
+      this.powerUpLimit = 1000000;
     }
     update(deltaTime) {
       if (this.game.keys.includes('ArrowUp')) this.speedY = -this.maxSpeed;
@@ -630,15 +630,15 @@ window.addEventListener('load', function () {
       this.explosions = [];
       this.enemyTimer = 0;
       this.enemyInterval = 2000;
-      this.ammo = 20;
-      this.maxAmmo = 50;
+      this.ammo = 50;
+      this.maxAmmo = 100;
       this.ammoTimer = 0;
       this.ammoInterval = 350;
       this.gameOver = false;
       this.score = 0;
       this.winningScore = 80;
       this.gameTime = 0;
-      this.timeLimit = 50000;
+      this.timeLimit = 200000;
       this.speed = 1;
       this.debug = false;
     }
