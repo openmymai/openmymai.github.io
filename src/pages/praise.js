@@ -169,66 +169,7 @@ const Praise = () => {
                 <video className="bg-video__content" autoPlay={true} loop muted playsInline>
                     <source src={bgvdo} type="video/mp4" />
                 </video>
-            </div>
-            <div>
-              <a href="/learning01" >
-                <span className="highlight" style={{fontSize: "2.5em"}}>
-                  บทนำไปใช้ในชีวิตประจำวัน
-                </span>
-              </a>
-              <br />
-              <br />
-              
-              <a href="/lesson0101" >
-                <span className="highlight" style={{fontSize: "2.5em"}}>
-                  ธัมมจักกัปปวัตตนสูตร ยถาภูตญาณทัสสนะ
-                </span>
-              </a>
-              <br />
-              <br />
-              
-              <a href="/lesson0201" >
-                <span className="highlight" style={{fontSize: "2.5em"}}>
-                  หลักสูตรอนาคามีผล
-                </span>
-              </a>
-              <br />
-              <br />
-
-              <a href="/lesson0301" >
-                <span className="highlight" style={{fontSize: "2.5em"}}>
-                  ว่าด้วยความเป็นอนิจจัง ทุกขัง อนัตตา
-                </span>
-              </a>
-              <br />
-              <br />
-
-              <a href="/lesson0401" >
-                <span className="highlight" style={{fontSize: "2.5em"}}>
-                  ว่าด้วย อดีต อนาคต ปัจจุบัน ตามความเป็นจริง
-                </span>
-              </a>
-              <br />
-              <br />
-
-              <a href="/lesson0501" >
-                <span className="highlight" style={{fontSize: "2.5em"}}>
-                  บทวิปัสสนาภาวนา ว่าด้วยปฏิจจสมุปบาท
-                </span>
-              </a>
-              <br />
-              <br />
-
-              <a href="/lesson0601" >
-                <span className="highlight" style={{fontSize: "2.5em"}}>
-                  พระสุตตันตปิฎก เล่ม ๙ สังยุตตนิกาย ขันธวารวรรค
-                </span>
-              </a>
-              <br />
-              <br />
-
-            </div>
-              
+            </div>  
             <h1>
               <div className="text">
                 <span style={{ whiteSpace: `pre` }} ref={el} />
