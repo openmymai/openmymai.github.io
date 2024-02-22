@@ -28,6 +28,9 @@ window.addEventListener('load', function () {
           this.game.keys.splice(this.game.keys.indexOf(e.key), 1);
         }
       });
+      window.addEventListener('touchstart', (e) => {
+        this.game.player.shootTop();
+      });
     }
   }
   class SoundController {
@@ -291,7 +294,17 @@ window.addEventListener('load', function () {
         this.game.ammo--;
       }
       this.game.sound.shot();
-      if (this.powerUp) this.shootBottom();
+      if (this.powerUp) {
+        this.shootMiddle();
+        this.shootBottom();
+      }
+    }
+    shootMiddle() {
+      if (this.game.ammo > 0) {
+        this.projectiles.push(
+          new Projectile(this.game, this.x + 80, this.y + 103)
+        );
+      }
     }
     shootBottom() {
       if (this.game.ammo > 0) {
@@ -629,7 +642,7 @@ window.addEventListener('load', function () {
       this.particles = [];
       this.explosions = [];
       this.enemyTimer = 0;
-      this.enemyInterval = 2000;
+      this.enemyInterval = 1000;
       this.ammo = 50;
       this.maxAmmo = 100;
       this.ammoTimer = 0;
