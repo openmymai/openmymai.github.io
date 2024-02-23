@@ -8,6 +8,8 @@ window.addEventListener('load', function () {
   class InputHandler {
     constructor(game) {
       this.game = game;
+      this.touchY = '';
+      this.touchTreshold = 30;
       window.addEventListener('keydown', (e) => {
         if (
           (e.key === 'ArrowUp' ||
@@ -29,7 +31,25 @@ window.addEventListener('load', function () {
         }
       });
       window.addEventListener('touchstart', (e) => {
+        this.touchY = e.changedTouches[0].pageY;
         this.game.player.shootTop();
+      });
+      window.addEventListener('touchmove', (e) => {
+        const swipeDistance = e.changedTouches[0].pageY - this.touchY;
+        if (
+          swipeDistance < -this.touchTreshold &&
+          this.keys.indexOf('swipe up' === -1)
+        )
+          this.keys.push('swipe up');
+        else if (
+          swipeDistance > this.touchTreshold &&
+          this.keys.indexOf('swipe down' === -1)
+        )
+          this.keys.push('swipe down');
+      });
+      window.addEventListener('touchend', (e) => {
+        this.keys.splice(this.keys.indexOf('swipe up'), 1);
+        this.keys.splice(this.keys.indexOf('swipe down'), 1);
       });
     }
   }
@@ -220,8 +240,15 @@ window.addEventListener('load', function () {
       this.powerUpLimit = 1000000;
     }
     update(deltaTime) {
-      if (this.game.keys.includes('ArrowUp')) this.speedY = -this.maxSpeed;
-      else if (this.game.keys.includes('ArrowDown'))
+      if (
+        this.game.keys.includes('ArrowUp') ||
+        this.game.keys.includes('swipe up')
+      )
+        this.speedY = -this.maxSpeed;
+      else if (
+        this.game.keys.includes('ArrowDown') ||
+        this.game.keys.includes('swipe down')
+      )
         this.speedY = this.maxSpeed;
       else if (this.game.keys.includes('ArrowLeft'))
         this.speedX = -this.maxSpeed;
