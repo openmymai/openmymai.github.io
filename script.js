@@ -30,11 +30,11 @@ window.addEventListener('load', function () {
           this.game.keys.splice(this.game.keys.indexOf(e.key), 1);
         }
       });
-      window.addEventListener('touchstart', (e) => {
+      this.game.canvas.addEventListener('touchstart', (e) => {
         this.touchY = e.changedTouches[0].pageY;
         this.game.player.shootTop();
       });
-      window.addEventListener('touchmove', (e) => {
+      this.game.canvas.addEventListener('touchmove', (e) => {
         const swipeDistance = e.changedTouches[0].pageY - this.touchY;
         if (
           swipeDistance < -this.touchTreshold &&
@@ -47,7 +47,7 @@ window.addEventListener('load', function () {
         )
           this.keys.push('swipe down');
       });
-      window.addEventListener('touchend', (e) => {
+      this.game.canvas.addEventListener('touchend', (e) => {
         this.keys.splice(this.keys.indexOf('swipe up'), 1);
         this.keys.splice(this.keys.indexOf('swipe down'), 1);
       });
@@ -655,9 +655,13 @@ window.addEventListener('load', function () {
     }
   }
   class Game {
-    constructor(width, height) {
-      this.width = width;
-      this.height = height;
+    constructor(canvas, context) {
+      this.canvas = canvas;
+      this.width = this.canvas.width;
+      this.height = this.canvas.height;
+      this.ctx = context;
+      // this.width = width;
+      // this.height = height;
       this.background = new Background(this);
       this.player = new Player(this);
       this.input = new InputHandler(this);
@@ -827,7 +831,7 @@ window.addEventListener('load', function () {
     }
   }
 
-  const game = new Game(canvas.width, canvas.height);
+  const game = new Game(canvas, ctx);
   let lastTime = 0;
   // animation loop
   function animate(timeStamp) {
