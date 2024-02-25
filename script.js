@@ -9,7 +9,8 @@ window.addEventListener('load', function () {
     constructor(game) {
       this.game = game;
       this.touchY = '';
-      this.touchTreshold = 2;
+      this.touchX = '';
+      this.touchTreshold = 10;
       window.addEventListener('keydown', (e) => {
         if (
           (e.key === 'ArrowUp' ||
@@ -35,21 +36,35 @@ window.addEventListener('load', function () {
         this.game.player.shootTop();
       });
       this.game.canvas.addEventListener('touchmove', (e) => {
-        const swipeDistance = e.changedTouches[0].pageY - this.touchY;
+        const swipeDistanceX = e.changedTouches[0].pageX - this.touchX;
+        const swipeDistanceY = e.changedTouches[0].pageY - this.touchY;
+
         if (
-          swipeDistance < -this.touchTreshold &&
+          swipeDistanceY < -this.touchTreshold &&
           this.game.keys.indexOf('swipe up' === -1)
         )
           this.game.keys.push('swipe up');
         else if (
-          swipeDistance > this.touchTreshold &&
+          swipeDistanceY > this.touchTreshold &&
           this.game.keys.indexOf('swipe down' === -1)
         )
           this.game.keys.push('swipe down');
+        else if (
+          swipeDistanceX < -this.touchTreshold &&
+          this.game.keys.indexOf('swipe right' === -1)
+        )
+          this.game.keys.push('swipe right');
+        else if (
+          swipeDistanceX > this.touchTreshold &&
+          this.game.keys.indexOf('swipe left' === -1)
+        )
+          this.game.keys.push('swipe left');
       });
       this.game.canvas.addEventListener('touchend', (e) => {
         this.game.keys.splice(this.game.keys.indexOf('swipe up'), 1);
         this.game.keys.splice(this.game.keys.indexOf('swipe down'), 1);
+        this.game.keys.splice(this.game.keys.indexOf('swipe right'), 1);
+        this.game.keys.splice(this.game.keys.indexOf('swipe left'), 1);
       });
     }
   }
@@ -250,9 +265,15 @@ window.addEventListener('load', function () {
         this.game.keys.includes('swipe down')
       )
         this.speedY = this.maxSpeed;
-      else if (this.game.keys.includes('ArrowLeft'))
+      else if (
+        this.game.keys.includes('ArrowLeft') ||
+        this.game.keys.includes('swipe left')
+      )
         this.speedX = -this.maxSpeed;
-      else if (this.game.keys.includes('ArrowRight'))
+      else if (
+        this.game.keys.includes('ArrowRight') ||
+        this.game.keys.includes('swipe right')
+      )
         this.speedX = this.maxSpeed;
       else {
         this.speedY = 0;
