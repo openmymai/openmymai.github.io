@@ -32,7 +32,9 @@ window.addEventListener('load', function () {
         }
       });
       this.game.canvas.addEventListener('touchstart', (e) => {
+        this.touchX = e.changedTouches[0].pageX;
         this.touchY = e.changedTouches[0].pageY;
+
         this.game.player.shootTop();
       });
       this.game.canvas.addEventListener('touchmove', (e) => {
