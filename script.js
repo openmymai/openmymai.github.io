@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
     constructor(game) {
       this.game = game;
       this.touchY = '';
-      this.touchTreshold = 30;
+      this.touchTreshold = 2;
       window.addEventListener('keydown', (e) => {
         if (
           (e.key === 'ArrowUp' ||
