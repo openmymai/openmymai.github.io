@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
       this.game = game;
       this.touchY = '';
       this.touchX = '';
-      this.touchTreshold = 15;
+      this.touchTreshold = 5;
       window.addEventListener('keydown', (e) => {
         if (
           (e.key === 'ArrowUp' ||
@@ -62,11 +62,11 @@ window.addEventListener('load', function () {
         )
           this.game.keys.push('swipe right');
       });
-      this.game.canvas.addEventListener('touchend', (e) => {
+      this.game.canvas.addEventListener('touchend', () => {
         this.game.keys.splice(this.game.keys.indexOf('swipe up'), 1);
         this.game.keys.splice(this.game.keys.indexOf('swipe down'), 1);
-        this.game.keys.splice(this.game.keys.indexOf('swipe right'), 1);
         this.game.keys.splice(this.game.keys.indexOf('swipe left'), 1);
+        this.game.keys.splice(this.game.keys.indexOf('swipe right'), 1);
       });
     }
   }
