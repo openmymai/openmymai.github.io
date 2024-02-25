@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
       this.game = game;
       this.touchY = '';
       this.touchX = '';
-      this.touchTreshold = 30;
+      this.touchTreshold = 20;
       window.addEventListener('keydown', (e) => {
         if (
           (e.key === 'ArrowUp' ||
@@ -61,8 +61,6 @@ window.addEventListener('load', function () {
           this.game.keys.indexOf('swipe right') === -1
         )
           this.game.keys.push('swipe right');
-
-        console.log(this.game.keys);
       });
       this.game.canvas.addEventListener('touchend', (e) => {
         this.game.keys.splice(this.game.keys.indexOf('swipe up'), 1);
