@@ -48,8 +48,8 @@ window.addEventListener('load', function () {
           this.game.keys.push('swipe down');
       });
       this.game.canvas.addEventListener('touchend', (e) => {
-        this.game.keys.splice(this.keys.indexOf('swipe up'), 1);
-        this.game.keys.splice(this.keys.indexOf('swipe down'), 1);
+        this.game.keys.splice(this.game.keys.indexOf('swipe up'), 1);
+        this.game.keys.splice(this.game.keys.indexOf('swipe down'), 1);
       });
     }
   }
