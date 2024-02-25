@@ -38,18 +38,18 @@ window.addEventListener('load', function () {
         const swipeDistance = e.changedTouches[0].pageY - this.touchY;
         if (
           swipeDistance < -this.touchTreshold &&
-          this.keys.indexOf('swipe up' === -1)
+          this.game.keys.indexOf('swipe up' === -1)
         )
-          this.keys.push('swipe up');
+          this.game.keys.push('swipe up');
         else if (
           swipeDistance > this.touchTreshold &&
-          this.keys.indexOf('swipe down' === -1)
+          this.game.keys.indexOf('swipe down' === -1)
         )
-          this.keys.push('swipe down');
+          this.game.keys.push('swipe down');
       });
       this.game.canvas.addEventListener('touchend', (e) => {
-        this.keys.splice(this.keys.indexOf('swipe up'), 1);
-        this.keys.splice(this.keys.indexOf('swipe down'), 1);
+        this.game.keys.splice(this.keys.indexOf('swipe up'), 1);
+        this.game.keys.splice(this.keys.indexOf('swipe down'), 1);
       });
     }
   }
