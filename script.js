@@ -4,6 +4,7 @@ window.addEventListener('load', function () {
   const ctx = canvas.getContext('2d');
   canvas.width = 1000;
   canvas.height = 500;
+  const fullScreenButton = document.getElementById('fullScreenButton');
 
   class InputHandler {
     constructor(game) {
@@ -347,6 +348,7 @@ window.addEventListener('load', function () {
       if (this.powerUp) {
         this.shootMiddle();
         this.shootBottom();
+        this.shootPower();
       }
     }
     shootMiddle() {
@@ -360,6 +362,16 @@ window.addEventListener('load', function () {
       if (this.game.ammo > 0) {
         this.projectiles.push(
           new Projectile(this.game, this.x + 80, this.y + 175)
+        );
+      }
+    }
+    shootPower() {
+      if (this.game.ammo > 0) {
+        this.projectiles.push(
+          new Projectile(this.game, this.x + 80, this.y - 50)
+        );
+        this.projectiles.push(
+          new Projectile(this.game, this.x + 80, this.y + 250)
         );
       }
     }
@@ -703,9 +715,9 @@ window.addEventListener('load', function () {
       this.ammoInterval = 350;
       this.gameOver = false;
       this.score = 0;
-      this.winningScore = 2500;
+      this.winningScore = 1000;
       this.gameTime = 0;
-      this.timeLimit = 500000;
+      this.timeLimit = 200000;
       this.speed = 1;
       this.debug = false;
     }
@@ -853,6 +865,18 @@ window.addEventListener('load', function () {
       );
     }
   }
+
+  function toggleFullScreen() {
+    console.log(document.fullscreenElement);
+    if (!document.fullscreenElement) {
+      canvas.requestFullscreen().catch((err) => {
+        alert(`Error, can't enable full-screen mode: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
+  fullScreenButton.addEventListener('click', toggleFullScreen);
 
   const game = new Game(canvas, ctx);
   let lastTime = 0;
