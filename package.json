@@ -40,6 +40,7 @@
     "gatsby-transformer-remark": "^6.0.0",
     "gatsby-transformer-sharp": "^5.0.0",
     "gh-pages": "^4.0.0",
+    "hls.js": "^1.5.8",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
