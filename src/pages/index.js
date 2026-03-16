@@ -69,16 +69,6 @@ const IndexPage = () => {
                 <span className='profile__social-network'>
                   <a
                     data-a11y='false'
-                    aria-label='Link to https://www.linkedin.com/in/sirisak-chantanate-0609b4297/'
-                    href='https://www.linkedin.com/in/sirisak-chantanate-0609b4297/'
-                    className=''
-                  >
-                    <i className='fab fa-linkedin'></i>
-                  </a>
-                </span>
-                <span className='profile__social-network'>
-                  <a
-                    data-a11y='false'
                     aria-label='Link to https://github.com/openmymai'
                     href='https://github.com/openmymai'
                     className=''
@@ -100,7 +90,7 @@ const IndexPage = () => {
                   <a
                     data-a11y='false'
                     aria-label='Link to https://lifelearning.vercel.app/'
-                    href='https://lifelearning.vercel.app/'
+                    href='https://lifewisdom.vercel.app/'
                     className=''
                   >
                     <i className='fas fa-globe-asia'></i>
